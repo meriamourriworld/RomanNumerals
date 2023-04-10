@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=M+PLUS+1p:wght@300;400&display=swap");
+.romanConverterMain .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .romanConverterMain .error {
   background-color: rgb(193, 36, 36);
   color: #FFFFFF;
@@ -81,6 +87,15 @@ body {
   width: 50%;
   height: 70%;
   margin-top: 40px;
+}
+.romanConverterMain .input {
+  width: 100%;
+  position: relative;
+}
+.romanConverterMain .delete {
+  position: absolute;
+  right: 110px;
+  cursor: pointer;
 }
 .romanConverterMain input, .romanConverterMain button, .romanConverterMain .conversionResult {
   width: 70%;

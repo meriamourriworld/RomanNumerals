@@ -74,6 +74,7 @@ let error = document.querySelector(".error");
 let result = document.querySelector(".resultText");
 let nbInput = document.querySelector("#nb");
 let btnCopy = document.querySelector(".copy");
+let btnDelete = document.querySelector(".delete");
 
 btnConvert.addEventListener("click", ()=>
 {
@@ -100,3 +101,10 @@ btnCopy.addEventListener("click",(e)=>
     btnCopy.style.color = "#2180E4";
     navigator.clipboard.writeText(result.textContent);
 });
+
+btnDelete.addEventListener("click", ()=>
+{
+    nbInput.value = "";
+    result.textContent = "";
+    nbInput.focus();
+})

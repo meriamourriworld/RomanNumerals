@@ -87,6 +87,18 @@ body
         height: 70%;
         margin-top: 40px;
     }
+    .input
+    {
+        @extend %centering;
+        width: 100%;
+        position: relative;
+    }
+    .delete
+    {
+       position: absolute;
+       right: 110px;
+       cursor: pointer;
+    }
     input, button, .conversionResult
     {
         width: 70%;
