@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Numerals Converter</title>
     <link rel="stylesheet" href="sass/main.css">
+    <script src="https://kit.fontawesome.com/bacda486c4.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header class="header">
@@ -18,6 +20,19 @@
     </header>
 
 
+    <main class="romanConverterMain">
+        <section class="mainText">
+            <h1>Convert Arabic to Roman Numerals</h1>
+            <h5>Type a number from 1 to 1000</h5>
+        </section>
+
+        <section class="converterForm">
+            <div class="error"></div>
+            <input type="text" name="nb" id="nb">
+            <button class="btnConvert">CONVERT</button>
+            <div class="conversionResult"><i class="fa fa-regular fa-copy fa-fade fa-lg fa-right"></i></div>
+        </section>
+    </main>
 
     <script src="scripts/script.js"></script>
 </body>

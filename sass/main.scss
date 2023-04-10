@@ -5,10 +5,11 @@
 @use './variables/colors' as *;
 
 //Importing Placeholders
-@use './helpers/placeholders';
+@use './helpers/placeholders' as *;
 
 //Importing Mixins
 @use './helpers/mixins' as *;
+
 
 
 *
@@ -57,5 +58,71 @@ body
         {
             margin-right: 20px;
         }
+    }
+}
+
+
+/*! MAIN STYLING */
+.romanConverterMain
+{
+    @include adaptableFlexing(flex-start,center,  column);
+    background-color: rgba($color: $black, $alpha: .7);
+    width: 80%;
+    height: 70%;
+    border: 1px solid $borderBlue;
+    border-radius: 12px;
+    margin: 30px auto;
+    color: $white;
+    font-family: $textFont;
+    .mainText
+    {
+        width: 100%;
+        text-align: center;
+        line-height: 2;
+    }
+    .converterForm
+    {
+        @include adaptableFlexing(space-around, center, column);
+        width: 50%;
+        height: 70%;
+        margin-top: 40px;
+    }
+    input, button, .conversionResult
+    {
+        width: 70%;
+        padding: 18px;
+        border-radius: 10px;
+        border: 0.5px solid rgba($color: $white, $alpha: .5);
+        color: $white;
+    }
+    button
+    {
+        margin-top: -20px;
+        background-color: $blue;
+        font-family: $menuFont;
+        font-size: 1.1em;
+        border: none;
+        letter-spacing: 0.5em;
+        cursor: pointer;
+    }
+    input, .conversionResult
+    {
+        background-color: rgba($color: $white, $alpha: .21);
+    }
+    .conversionResult
+    {
+        height: 120px;
+        position: relative;
+        .fa
+        {
+            color: $white;
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+    .error
+    {
+        @extend %error;
     }
 }
