@@ -73,9 +73,11 @@ let btnConvert = document.querySelector(".btnConvert");
 let error = document.querySelector(".error");
 let result = document.querySelector(".resultText");
 let nbInput = document.querySelector("#nb");
+let btnCopy = document.querySelector(".copy");
 
 btnConvert.addEventListener("click", ()=>
 {
+    btnCopy.style.color = "#FFFFFF";
     let nb = parseInt(nbInput.value);
     if(isNaN(nb) || nb < 1 || nb > 1000)
     {
@@ -91,6 +93,10 @@ btnConvert.addEventListener("click", ()=>
         result.textContent = convertToRoman(nb);
         result.parentElement.style.border = "2px solid #2180E4";
     }
+});
 
-
+btnCopy.addEventListener("click",(e)=>
+{
+    btnCopy.style.color = "#2180E4";
+    navigator.clipboard.writeText(result.textContent);
 });
