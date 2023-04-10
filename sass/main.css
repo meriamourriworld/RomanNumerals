@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=M+PLUS+1p:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../imgs/mainBack.jpg");
+  height: 100vh;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */

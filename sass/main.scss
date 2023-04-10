@@ -1,0 +1,22 @@
+//Importing Fonts
+@use './variables/fonts' as *;
+
+//Importing Colors
+@use './variables/colors' as *;
+
+//Importing Fonts
+@use './helpers/placeholders' as *;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url("../imgs/mainBack.jpg");
+    height: 100vh;
+    background-size: cover;
+}
