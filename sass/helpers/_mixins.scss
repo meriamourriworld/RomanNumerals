@@ -1,4 +1,4 @@
-@mixin adaptableFlexing($horizontal, $vertical)
+@mixin adaptableFlexing($horizontal, $vertical:center)
 {
     display: flex;
     justify-content: $horizontal;
