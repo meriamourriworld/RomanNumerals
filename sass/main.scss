@@ -120,6 +120,12 @@ body
             right: 10px;
             cursor: pointer;
         }
+        .resultText
+        {
+            font-size: x-large;
+            font-family: $menuFont;
+            font-weight: 600;
+        }
     }
     .error
     {

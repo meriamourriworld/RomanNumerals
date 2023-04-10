@@ -110,4 +110,9 @@ body {
   position: absolute;
   right: 10px;
   cursor: pointer;
+}
+.romanConverterMain .conversionResult .resultText {
+  font-size: x-large;
+  font-family: "Fira Code", monospace;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
