@@ -107,4 +107,5 @@ btnDelete.addEventListener("click", ()=>
     nbInput.value = "";
     result.textContent = "";
     nbInput.focus();
+    btnCopy.style.color = "#FFFFFF";
 })
