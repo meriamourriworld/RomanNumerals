@@ -3,9 +3,12 @@ image: node:latest
 pages:
   stage: deploy
   script:
-    - npm install
-    - npm run build
-    - mv ./ public
+    # Replace these commands with the specific commands needed to build your project.
+    # For example, if you're compiling Sass, you might use: `sass input.scss output.css`
+    # If you're transpiling JavaScript, you might use: `babel input.js --out-file output.js`
+    - echo "Building project..."
+    - echo "Copying files to public directory..."
+    - cp -r * public
   artifacts:
     paths:
       - public
