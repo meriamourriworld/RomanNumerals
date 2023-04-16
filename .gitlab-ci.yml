@@ -1,0 +1,25 @@
+image: alpine:latest
+
+stages:
+    - compile
+    - deploy
+    
+compile:
+  stage: compile
+  image: node:8.15-alpine
+  script:
+    - yarn global add node-sass
+    - node-sass ./sass/main.scss ./sass/main.css --style compressed
+  only:
+      - master
+  artifacts:
+    paths:
+      - ./sass
+
+pages:
+  stage: deploy
+  script:
+  - mv sass/ public
+  artifacts:
+    paths:
+    - public
